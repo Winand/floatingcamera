@@ -10,7 +10,7 @@ class Cameras(QtCore.QObject):
     `current` - currently used camera
     """
     error = QtCore.Signal(qtmm.QCamera.Error)
-    px_fmts = {4: "RGB24", 18: "YUV422P", 30: "JPG"}
+    px_fmts = {4: "RGB24", 11: "BGR24", 18: "YUV422P", 30: "JPG"}
 
     def __init__(self, default_view=None):
         super().__init__()
