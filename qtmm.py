@@ -6,7 +6,7 @@ from qtpy import QtMultimediaWidgets as qtmmw
 from qtapp import QtForm, QtWidgets, Qt, QtCore
 from camera import Cameras
 
-import ctypes
+import ctypes, ctypes.wintypes
 class WINDOWPOS(ctypes.Structure):
     _fields_ = [
         ('hwnd', ctypes.wintypes.HWND),
